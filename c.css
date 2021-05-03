@@ -1,0 +1,161 @@
+.sidenav{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background: #031525;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a{
+  padding:6px 6px 6px 22px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+.sidenav a:hover{
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+.logohead{
+  margin-top: 0px;
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.459);
+  cursor: pointer;
+}
+.logohead img{
+  width: 60px;
+  height: 50px;
+}
+.logohead p{
+  font-family: Roboto;
+  font-size: 2.3em;    
+}
+.projectoverview{
+  border-bottom: 0.5px solid rgba(153, 153, 153, 0.459);
+  color: white;
+  display: flex;
+  margin: auto;
+}
+.spaceclass{
+  height: 8px;
+}
+.projectoverview .button:hover{
+  background:rgba(255,255,255,0.2);
+}
+#build{
+  font-size: 20px;
+  color: white;
+  padding-left: 20px;
+}
+.sidenav ul li a{
+  color: white;
+  font-size: 20px;
+}
+
+
+.navclass{
+  margin-left: 250px;
+}
+
+.headpart{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(20, 114, 255);
+  position: fixed;
+  width: 91em;
+}
+li.dropdown{
+  list-style-type: none;
+}
+.col1{
+  width: 500px;
+}
+.col2{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+}
+body {
+    font-family: "Lato", sans-serif;
+  }
+    
+  section  {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  section header ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: cadetblue;
+      font-size: 15px;
+     
+      
+  }
+  section header ul li select{
+      border: none;
+      color: cadetblue;
+      font-size: 18px;
+    
+  }
+  section header ul li{
+      list-style: none;
+      margin-left: 18px;
+  }
+  .top .row1{
+      display: flex;
+      justify-content: space-between;
+  }
+section .authentication{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.topnav {
+    overflow: hidden;
+    border-bottom:1px solid black;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .topnav a:hover {
+    border-bottom: 3px solid rgb(45, 138, 245);
+  }
+  
+  .topnav a.active {
+    border-bottom: 3px solid rgb(45, 138, 245);
+  }
+  section form{
+    max-width: 500px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    margin: 50px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 80px;
+  }
+  
+  .card{
+    width: 1000px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    margin-top: 30px;
+    text-align: left;
+    
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Hosting</title>
+    <link rel="stylesheet" href="sty.css">
+    <script src="script.js"></script>
+</head>
+<body>
+     <div class="sidenav">
+    <div class="logohead">
+        <img src="logo.png" alt="" >
+        <p id="firebase" style="color: white; text-align: center;"> Firebase</p>
+    </div>
+    <div class="projectoverview">
+        <a href="#" ><i style="color: white;margin-left: -3px; margin-right: -2px;" class="fas fa-home"></i><p style="display: inline-block; font-size: 18px;margin-left: 5px; font-weight: 600;  color: white;">Project Overview</p>
+            <span style="color: white;margin-left: 8px;margin-top: 10px;" class="glyphicon glyphicon-cog"></span>
+            
+        </a>
+    </div>
+    <br>
+        <a style="padding-right: 180px;" href="#">Build</a><br><br>
+        <a style="padding-right: 60px;" href="#"><i class="fas fa-user-friends"></i> Authentication</a><div class="spaceclass"></div>
+        <a style="padding-right: 125px;" href="#"><i class="fas fa-fire"></i> Firestore</a><div class="spaceclass"></div>
+        <a style="padding-right: 30px;" href="#"><i class="fas fa-server"></i> Realtime Database</a><div class="spaceclass"></div>
+        <a style="padding-right: 130px;" href="#"><i class="fas fa-folder"></i> Storage</a><div class="spaceclass"></div>
+        <a style="padding-right: 135px;" href="#"><i class="fas fa-globe-americas"></i> Hosting</a><div class="spaceclass"></div>
+        <a style="padding-right: 110px;" href="#"><i class="fas fa-code"></i> Functions</a><div class="spaceclass"></div>
+        <a style="padding-right: 35px;" href="#"><i class="fas fa-robot"></i> Machine Learning</a><div class="spaceclass"></div>
+    
+</div>
+    <section>
+        <header>
+            <div class="top">
+            <div class="row1">
+            <ul>
+                <li><a href="#"><select>
+                    <option value="">my webpage </option>
+                    <option value="">See all projects</option>
+                    <option value="">Add a project</option>
+                </select></a></li>
+                </ul>
+       
+                <ul>
+                <li>Go to docs</li>
+                <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAgVBMVEX///8AAABVVVX8/Pzy8vL5+fnp6ekzMzPX19ft7e3l5eXb29syMjJwcHCVlZWKiootLS0fHx/GxsYZGRmgoKCysrK/v78ODg6Dg4Oqqqo6Ojp3d3dJSUnR0dFaWlpOTk5CQkIkJCSFhYVkZGSampq4uLhhYWFsbGylpaXCwsKQkJBtm1JRAAAE40lEQVR4nO3di1bqMBAFUANFXqIgyMtXUcAL//+Bl4JdgBRoycw5QWd/Qc4S22QySW9ujDHGGGOMMcYYY4wxxhhj/qBG763arpZ6DfZAlDRKLvXeZA9Gw8jt6rGHI6/n9i3ZA5L26H56Yg9JVvnuIKGL2IMS1T8M+Mv+FZ8zEo7ZgxLVyUjo2IMSlRXwF/0jRrWsf0PnRrU6e2gCotmwOsjMt9ZuPV3zFK7cvJ8cD7f18VphD/UijWU1T7y17rDGHm5hi9L5XHvi65rjzNoF8yUGvTJ73Hn1L8m3NmIPPZdm0d/nrvEje/jnPXjkS7QC/6k2Lv6Bbr2yQ5zy5J9v5Z4d47ihSEDn5oH+UstvQgFXD5wgJ+XRWCzgapJzy45zqJJRp/AwCC5iWfIvmOiE9kP1ec1nq4a14Miqw/h6Y4fa9bPcK+OBHWurqRLQuWAmqZWuUsJgalUa/4Qbn+xoG69qAZ3rs8OtCSwnjhqEMEPVeY6mAnieVlQDOscvGvuu6c95ZgesKwd0jj0Fv1dPSP5PrGRum4kacF/7M/WA7A3/GJCwzQzYAAR0jtlepP+cSTCfNRNIwi4voNa68Cfe5uIUlJDXIfYOSvjCCqg/Y0uxZm6H3XhaFqSE2suKLdb7Qm4n5pwSJ6D22ncXp/6NmbJtcBqnEOuKFGd9gXrfJzgb33NgQs4uzQSYsENJCAzI6SeOoAkZxZoaNCFjAYWblSYYW4nI16FzM0LC0flhCWL0ZWKqUCnGK1+qiS2fD0LCFjRhi5AQOWnj7Ojj1r8JxsRUvs8rtISoUuIGo46BTfhOSPgCTcgoCv/+hIjN0b+UMLaECqQbu09jHPzOf35SQpWQUPb0QYgJNZsuDxFaTsoTaMIJvtE0UmvuztTFlxPrJ07ZKxjg+0yRe2sJ/P4aqpcmhW/9wpa8GUVvzTMIWfCng7FFfUZZH1vyZhS9l+CE+N42vcNO2fCnEj7BCfElYWypjVBsq2CXFqvFBXpiiuu8TKEnpuhpKX5imn0/mSb0YUtky9fGFJwQ/TrEvxCx1dIEup4ID4hu/EKvfxPYNbDMdUnFYLtosa0mG9hHzYSQENpjip+zJZAnZ/AzmgSyew//vk8g+6KwO2upNu5cCbpWmsJVFNFVqBSsQTHrCnkI2BYbuty9hSoLf9ESzjEBsQct9mGKNdgG732QZw3yYOUhRE2R+SeEnAiOsPv3B/Sn34yV4S71ySlrwral/U5Eb1ccUr7pBHfJwHGq1YwFO92a4kr4lp3tm1pdUfi658up3aKMPSVzSqwTEL1zf0pJY6WIPY13jsLV+yH9BRPSR70Evwog5UW08lbHHj3Ipy04CW/q33B5iYFYRya6DTE/oe4F3auQ/Yi0L3D2KPL68s4XYY8ZFhd7lt8Cfcbs6no9bxjb9cV5bPDP4tI1iBkXnxhjjDHmjyhWPg7605zHFJq0h/LtqkKKtGwwLhTwV+TaQfRRAyEFEl7pJ+Tzb4iT7uv2lv9pepVP0kTeHkb/chJL3kOK7I9WecjXxcj93JGnfzkCDtmD9HO+eeN6/wm/nXvaMC4mFXb68oUAvuDorzY5HpD1eRVh5WO/1OerXFFkus3awPpifk9NXjTa3yjvTK/4NX9MZTGdx9W7u/Hbss//fqoxxhhjjDHGGGOMMcYYYwzcf3X1WcrJY6i6AAAAAElFTkSuQmCC" alt="alerts" width="30px" height="30px"" ></li>
+                <li><img src="data:image/jpeg;base64,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" alt="profile img" width="40px" height="40px"></li>
+
+            </ul>
+        </div>
+        </div>
+        </header>
+        <div class="hosting">
+            <h1>Hosting</h1>
+        </div>
+        <div class="topnav">
+            <a class="Dashboard" href="#">Dashboard</a>
+            <a href="#usage">usage</a>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; geethanjali-d680c domains
+
+          <div class="card">
+
+            <div class="card-header">
+            <button type="button" class="btn btn-primary" style="display: inline; position: absolute; right: 25px;">Add custom Domain</button>
+            <br>
+            <br>
+            <br>
+            Domain &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Status
+              
+            </div>
+            <div class="card-body">
+            <h6 class="card-link"><a href="https://geethanjali-d680c.web.app/"></a>
+            geethanjali-d680c.web.app</a></h6>Default
+            <br>
+            <br>
+            <br>
+            <h6 class="card-link"><a href="https://geethanjali-d680c.firebaseapp.com/"></a>
+            geethanjali-d680c.firebaseapp.com</a></h6> Default
+        
+            </div>
+            </div>
+            <br> 
+            <br> 
+            <br> 
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;geethanjali-d680c release history
+            <br>
+                <div class = "card">
+                <div class="card-head">
+                    <br>    <div class="mr-4" style="display: inline;">Status</div> <div class="mr-4" style="display: inline;">Time</div> <div class="mr-4" 
+                    style="display: inline;">Deploy</div> <div style="display: inline; position: absolute; right: 25px;">Files</div>
+                </div>
+                <div class="card text-center">
+                <div class="card-b">
+                  
+                  <p class="card-text">Waiting for your first release</p>
+                  <a href="#" class="btn btn-primary">Instruction</a>
+                </div>
+                <br>
+                <br>
+                </div>
+                <br>
+                <br>
+            </div>   
+            <br>
+            <br>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;Preview channels
+
+                <div class="card mb-3" style="max-width: 1000px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img src="http://www.gstatic.com/mobilesdk/200817_mobilesdk/preview_channels_zero_state@2x.png" class="card-img" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Use preview channels to test and <br>
+                              share changes before goind live</h5>
+                          <p class="card-text">Each preview channel serves content at its own unique, temporary URL<br>
+
+                            Try it out! Run this command from your local project directory:</p>
+                          <p class="card-text"><small class="text-muted">firebase hosting:channel:deploy <b>preview_name </b></small></p>
+                          <h6 class="card-link"><a href="https://firebase.google.com/docs/hosting/test-preview-deploy?authuser=0#preview-channels"
+                            >View the docs</a></h6>
+                        </div>
+                      </div>
+                    </div>
+                  
+           
+                
+              
+    </section>  
+</body>
+</html>
